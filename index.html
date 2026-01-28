@@ -1,22 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <head>
+    <title>Hello World!</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Random Sentence</title>
-    <link rel="stylesheet" href="stylesheet.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="styling.css" rel="stylesheet">
 </head>
 <body>
-    <div class="centered">
-        <h1>Haiku Generator</h1>
-        <p id="haiku1">The adjective noun verb adverb</p>
-        <p id="haiku2">The adjective noun verb adverb</p>
-        <p id="haiku3">The adjective noun verb adverb</p>
-        
-        <button id="createhaiku" onclick="CreateHaiku()">Create Haiku</button>
-
-        <button id="copyhaiku" onclick="CopyHaiku()">Copy Haiku</button>
+    <div class="retro-box centered">
+        <h1 class="centered-text" style="padding:10px" class="title">[Album Review Site]</h1>
     </div>
 
-    <p id="test"></p>
-    
-    <script src="haiku.js"></script>
+    <div class="centered-text">
+        <div class="btn-group" role="group"></div>
+            <button id="search-albums-button" class="btn button-margin">[Search Albums]</button>
+            <button id="album-list-button" class="btn button-margin">[Album List]</button>
+            <button id="add-album-button" class="btn button-margin">[Add Album]</button>
+        </div>
+    </div>
+
+    <div id = "page-content" class="centered-text">
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
